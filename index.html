@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video + Text Section</title>
 
+<style>
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.video-box {
+  flex: 1;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-box {
+  flex: 1;
+  font-family: Arial, sans-serif;
+}
+
+.text-box h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="section">
+
+  <!-- Left Video -->
+  <div class="video-box">
+    <video autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Right Text -->
+  <div class="text-box">
+    <h2>Premium Ergonomic Comfort</h2>
+    <p>
+      Discover our modern ergonomic products designed to improve
+      posture, comfort and productivity in your workspace.
+    </p>
+
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+
+</div>
+
+</body>
+</html>
